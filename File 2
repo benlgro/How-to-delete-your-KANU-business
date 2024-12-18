@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your KANU Story</title>
+    <script
+        custom-element="storyly-web"
+        src="https://web-story.storyly.io/sdk/3.6.*/storyly-web.js"
+    ></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        .story-container {
+            width: 360px;
+            height: 640px;
+            position: relative;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Check Out Your KANU Story!</h1>
+        <div class="story-container">
+            <storyly-web></storyly-web>
+            <script>
+                const storylyWeb = document.querySelector("storyly-web");
+                storylyWeb.init({
+                    token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NfaWQiOjEzNDA4LCJhcHBfaWQiOjIwODk4LCJpbnNfaWQiOjIzNDUzfQ.zO_Xc4cm0FeUlZecDf1pcW10Z7cKorSKnDL2OkACADI",
+                    group: "186856",
+                    autoplay: true
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>
